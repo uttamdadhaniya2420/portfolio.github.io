@@ -3,24 +3,29 @@ function LoginClick() {
   }
 
 document.getElementById('Download_resume').addEventListener('click', function() {
-    // URL of the Word file
-    let fileUrl = 'Css File/MasterPage Css/assets/img/Resume.docx';
+    try{
+        // URL of the Word file
+        let fileUrl = 'Css File/MasterPage Css/assets/img/Resume.docx';
     
-    // Create a temporary anchor element
-    let link = document.createElement('a');
-    link.href = fileUrl;
+        // Create a temporary anchor element
+        let link = document.createElement('a');
+        link.href = fileUrl;
     
-    // Set the download attribute with a filename
-    link.download = 'UttamDadhaniya.docx';
+        // Set the download attribute with a filename
+        link.download = 'UttamDadhaniya.docx';
     
-    // Append the link to the body (necessary for Firefox)
-    document.body.appendChild(link);
+        // Append the link to the body (necessary for Firefox)
+        document.body.appendChild(link);
     
-    // Programmatically click the link to trigger the download
-    link.click();
+        // Programmatically click the link to trigger the download
+        link.click();
     
-    // Remove the link from the document
-    document.body.removeChild(link);
+        // Remove the link from the document
+        document.body.removeChild(link);
+    }
+    catch(error){
+        alert(error);
+    }
 });
 
 function loginclick(){
