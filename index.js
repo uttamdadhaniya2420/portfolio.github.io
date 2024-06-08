@@ -4,7 +4,7 @@ function LoginClick() {
 
 document.getElementById('Download_resume').addEventListener('click', function() {
     // URL of the Word file
-    let fileUrl = 'MasterPage Css/assets/img/Resume.docx';
+    let fileUrl = 'Css File/MasterPage Css/assets/img/Resume.docx';
     
     // Create a temporary anchor element
     let link = document.createElement('a');
